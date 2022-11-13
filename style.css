@@ -77,7 +77,11 @@ a {
 }
 
 .main-screen__btn:hover {
+    background: #fff; 
+}
 
+.main-screen__btn a:hover {
+    color: #423F3E;
 }
 
 .main-screen__btn a {
@@ -105,6 +109,13 @@ a {
     line-height: 120%;
     text-align: center;
     color: #2B2B2B;
+}
+
+
+
+label,
+input {
+    display: none;
 }
 
 @media(max-width:900px) {
@@ -150,7 +161,40 @@ a {
         line-height: 120%;
     }
 
-    /* надо сделать чекбокс */
+    /* burger */
+    label {
+        display: block;
+    }
+
+    .main-screen__header {
+        position: relative;
+    }
+
+    .nav {
+        text-align: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        padding: 20px;
+        width: 130px;
+        height: 155px;
+        border-radius: 0 32px 32px 0;
+        background-color: #EBEBEB;
+        transform: translateX(-200%);
+        transition: .3s all ease-in-out;
+    }
+
+    .nav__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input:checked~.nav  {
+        transform: translateX(0);
+    }
+
+    
 }
 
 /* section 2 */
@@ -174,10 +218,6 @@ a {
     line-height: 120%;
     color: #2B2B2B;
     margin-bottom: 55px;
-}
-
-.info__item {
-
 }
 
 .item {
@@ -213,10 +253,6 @@ a {
 .image {
     flex: 0 1 35%;
     background-color: #423F3E;
-}
-
-.image__photo {
-
 }
 
 @media(max-width:1200px) {
@@ -265,10 +301,6 @@ a {
 
 .content__desc {
     max-width: 510px;
-
-}
-
-.desc {
 
 }
 
@@ -360,10 +392,6 @@ a {
     gap: 88px;
     padding: 0 120px;
     margin-bottom: 108px;
-}
-
-.cnt__desc {
-
 }
 
 .cnt__h3 {
@@ -502,10 +530,6 @@ a {
     padding: 0 120px;
     display: flex;
     justify-content: space-between;
-}
-
-.footer__info {
-    
 }
 
 .footer__title {

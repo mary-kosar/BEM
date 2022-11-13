@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>BEM</title>
 </head>
 <body>
@@ -15,6 +16,10 @@
         <section class="main-screen">
             <div class="main-screen__header">
                 <a href="#" class="main-screen__logo"></a>
+                <label for="menu">
+                    <span class="material-icons">menu</span>
+                </label>
+                <input type="checkbox" id="menu">
                 <nav class="nav">
                     <ul class="nav__ul">
                         <li class="nav__li"><a href="#">Product</a></li>
@@ -46,7 +51,7 @@
                 </div>
             </div>
             <div class="image">
-                <img src="#" alt="image" class="image__photo">
+                <img src="#" alt="image">
             </div>
         </section>
 
@@ -71,7 +76,7 @@
         </section>
 
         <section class="cnt">
-            <div class="cnt__desc">
+            <div>
                 <h3 class="cnt__h3">Where teams design together</h3>
                 <p class="cnt__text">Lorem quis sunt magna dolor consectetur aliqua officia laborum reprehenderit</p>
             </div>
@@ -104,7 +109,7 @@
             <div>
                 <a href="#" class="footer__logo"> <img src="./img/logo.svg" alt="logo"></a>
             </div>
-            <div class="footer__info ">
+            <div>
                     <p class="footer__title">cillum incididunt</p>
                 <div class="footer__img">
                     <a href="#"><img src="./img/linkedin.svg" alt="linkedin"></a>
